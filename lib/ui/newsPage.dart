@@ -25,7 +25,7 @@ class _NewsPageState extends State<NewsPage> with AutomaticKeepAliveClientMixin{
           _scrollController.position.maxScrollExtent) {
         setState(() {
           isLoading = true;
-          var start = newsData.length;
+          var start = newsData.length + 1;
           getMoreData(start);
         });
 
